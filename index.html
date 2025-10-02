@@ -49,4 +49,158 @@
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1505692952043-31b0b
+      background: url('https://images.unsplash.com/photo-1505692952043-31b0b3ff1eb4?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      padding: 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 700px;
+    }
+
+    section {
+      padding: 3rem 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #2c3e50;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-body h3 {
+      margin-bottom: 0.5rem;
+      color: #34495e;
+    }
+
+    .card-body p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 style="text-align:center;">HomeNest</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Listings</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Your Dream House Awaits. Explore Top Listings Today.</h1>
+  </section>
+
+  <section>
+    <h2>Featured Houses</h2>
+    <div class="cards container">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80" alt="Modern House">
+        <div class="card-body">
+          <h3>Modern Family Home</h3>
+          <p>4 beds, 3 baths, spacious backyard, and open-plan living area in a quiet neighborhood.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600585154604-7d0c18249b48?auto=format&fit=crop&w=800&q=80" alt="Cozy Cottage">
+        <div class="card-body">
+          <h3>Cozy Country Cottage</h3>
+          <p>Charming 3-bedroom cottage surrounded by nature, perfect for a peaceful lifestyle.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=800&q=80" alt="Luxury Villa">
+        <div class="card-body">
+          <h3>Luxury Beachfront Villa</h3>
+          <p>5 bedrooms, private pool, and stunning ocean views for the ultimate luxury living.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About HomeNest</h2>
+    <div class="container" style="max-width: 700px; margin:auto; text-align:center;">
+      <p>At HomeNest, we connect you with the best houses in your area. Whether you're buying, selling, or just browsing, our curated listings and expert advice will help you find the perfect home for you and your family.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <div class="container" style="max-width: 700px; margin:auto; text-align:center;">
+      <p>Email: info@homenest.com</p>
+      <p>Phone: +1 (555) 321-9876</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HomeNest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
